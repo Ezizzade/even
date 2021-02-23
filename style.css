@@ -65,9 +65,10 @@ nav.bottom-nav .nav-left{
 }
 
 .nav-left .logo{
- font-size: 35px;
+ font-size: 28px;
  font-weight: 600;
  margin-left: 30px;
+ font-family: "Orbitron", sans-serif;
 }
 
 .nav-right{
@@ -134,7 +135,7 @@ nav.bottom-nav .nav-left{
   }
   .nav-right .menu li a{
     display: inline-block;
-    margin: 25px 0;
+    margin: 45px 0;
     color: white;
   }
 
@@ -150,10 +151,4 @@ nav.bottom-nav .nav-left{
   .menu-btn i.active::before{
     content: "\f00d";
   }
-
-
-
-}
-@media only screen and (max-width:730px) {
-
 }

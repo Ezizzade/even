@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=IBM+Plex+Mono:ital,wght@0,300;1,300&family=Orbitron:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather+Sans:wght@400;500;600;700&family=Teko:wght@400;500;600&family=Varela+Round&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
 .header h1{
   color: white;
   font-size: 100px;
@@ -26,11 +34,6 @@ to {
 }
 }
 
-
-
-
-
-
 /* #####RESPONSIVE DESING START######## */
 
 @media only screen  and (max-width:940px) {
@@ -44,5 +47,6 @@ to {
 }
 @media only screen  and (max-width:730px) {
   .header h1{
-    font-size: 45px;
+    font-size: 40px;
+}
 }
