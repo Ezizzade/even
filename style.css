@@ -8,6 +8,7 @@
   text-decoration: none;
   list-style: none;
 }
+
 header{
   position: relative;
   width: 100%;
@@ -22,6 +23,7 @@ header{
   background-size: cover;
   z-index: -1;
 }
+
 nav.top-nav{
   color: black;
   display: flex;
@@ -31,18 +33,20 @@ nav.top-nav{
   height: 30px;
   border-bottom: 1px solid #9e9e9e;
 }
+
 .left{
   margin-left: 120px;
   font-size: 12px;
   width: 50%;
-
 }
+
 .right{
   width: 50%;
   display: flex;
   justify-content: flex-end;
   margin-right: 100px;
 }
+
 nav.bottom-nav{
   position: sticky;
   top:0;
@@ -55,32 +59,101 @@ nav.bottom-nav{
   background: white;
   z-index: 10
 }
+
 nav.bottom-nav .nav-left{
-  width: 30%;
+  width: 50%;
 }
+
 .nav-left .logo{
  font-size: 35px;
  font-weight: 600;
  margin-left: 30px;
 }
+
 .nav-right{
-  width: 70%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
+
 .nav-right .menu{
   margin-right: 30px;
 }
+
 .nav-right .menu li{
   display: inline-block;
 }
+
 .nav-right .menu li a{
  color: black;
  font-size: 20px;
  margin-left: 18px;
 }
 
-.test{
-  position: relative;
+.menu-btn{
+  display: none;
+  margin-right: 30px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+
+
+/* ######RESPONSIVE DESIGN START######## */
+
+@media only screen and (max-width:930px) {
+  header{
+    background-image: url(shoe5r.jpg);
+  }
+
+  nav.bottom-nav.active{
+    position: fixed;
+    top:0;
+    left: 0;
+  }
+  .nav-right .menu{
+    position: fixed;
+    top:0;
+    left:-100%;
+    background: #ea0855;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 85px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-right .menu.active{
+    left:0;
+  }
+
+  .nav-right .menu li{
+    display: block;
+  }
+  .nav-right .menu li a{
+    display: inline-block;
+    margin: 25px 0;
+    color: white;
+  }
+
+
+  .menu-btn{
+    display:block;
+    z-index: 10;
+  }
+
+  .menu.active + .menu-btn{
+    color:white;
+  }
+  .menu-btn i.active::before{
+    content: "\f00d";
+  }
+
+
+
+}
+@media only screen and (max-width:730px) {
+
 }
